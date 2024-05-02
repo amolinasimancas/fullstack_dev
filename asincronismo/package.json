@@ -1,0 +1,17 @@
+{
+  "name": "asincronismo",
+  "version": "1.0.0",
+  "description": "ejercicios curso asincronismo JS de Platzi",
+  "main": "index.js",
+  "scripts": {
+    "callback": "node src/callback/xmlHttpRequest.js"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
+  }
+}
