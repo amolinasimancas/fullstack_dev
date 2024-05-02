@@ -15,6 +15,7 @@
             --medium-gray: #999999;
             --light-gray: #C0C0C0;
             --turquoise: #328A8C;
+            --orange: #D43E21;
             --sm: 16px;
             --md: 18px;
             --lg: 20px;
@@ -40,7 +41,7 @@
         .navbar-right ul {
             list-style: none;
             padding: 0;
-            margin: 0;
+            margin: 10;
             display: flex;
             align-items: center;
             height: 60px;
@@ -49,7 +50,7 @@
             display: flex;
         }
         .navbar-left ul {
-            margin-left: 12px;
+            margin-left: 20px;
         }
         .navbar-left ul li a,
         .navbar-right ul li a {
@@ -59,10 +60,13 @@
             padding: 8px;
             border-radius: 8px;
         }
-        .navbar-left ul li a:hover,
-        .navbar-right ul li a:hover {
+        .navbar-left ul li a:hover{
             border: 1px solid var(--turquoise);
             color: var(--turquoise);
+        } 
+        .navbar-right ul li a:hover {
+            border: 1px solid var(--orange);
+            color: var(--orange);
         }
         .navbar-email {
             color: var(--medium-gray);
@@ -71,6 +75,7 @@
         }
         .navbar-shopping-cart {
             position: relative;
+            color: var(--light-gray);
         }
         .navbar-shopping-cart div {
             width: 16px;
