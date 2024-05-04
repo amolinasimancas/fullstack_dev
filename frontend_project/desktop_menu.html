@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        :root {
+            --white: #FFFFFF;
+            --black: #0C0C0C;
+            --medium-gray: #999999;
+            --light-gray: #C0C0C0;
+            --turquoise: #328A8C;
+            --orange: #D43E21;
+            --sm: 16px;
+            --md: 18px;
+            --lg: 20px;
+        }
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--black);
+        }
+        .desktop-menu {
+            width: 100px;
+            height: auto;
+            border: 1px solid var(--light-gray);
+            border-radius: 6px;
+            padding: 20px 20px 0 20px;
+        }
+        .desktop-menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .desktop-menu ul li {
+            text-align: end;
+        }
+        .desktop-menu ul li:nth-child(1), 
+        .desktop-menu ul li:nth-child(2) {
+            font-weight: bold;
+        }
+        .desktop-menu ul li:last-child {
+            padding-top: 20px;
+            border-top: 1px solid var(--light-gray);
+        }
+        .desktop-menu ul li:last-child a {
+            color: var(--orange);
+            font-size: var(--sm);
+        }
+        .desktop-menu ul li a {
+            color: var(--medium-gray);
+            text-decoration: none;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="desktop-menu">
+        <ul>
+            <li>
+                <a href="/" class="title">My orders</a>
+            </li>
+            <li>
+                <a href="/">My account</a>
+            </li>
+            <li>
+                <a href="/" class="title">Sign out</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

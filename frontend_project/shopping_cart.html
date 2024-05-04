@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>AMSER - Shopping Cart</title>
+    <style>
+        :root {
+            --white: #FFFFFF;
+            --black: #0C0C0C;
+            --medium-gray: #999999;
+            --light-gray: #C0C0C0;
+            --turquoise: #328A8C;
+            --orange: #D43E21;
+            --sm: 16px;
+            --md: 18px;
+            --lg: 20px;
+        }
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--black);
+        }
+        .product-detail {
+            width: 360px;
+            padding: 24px;
+            box-sizing: border-box;
+            position: absolute;
+            right: 0;
+        }
+        .title-container {
+            display: flex;
+            color: var(--medium-gray);
+        }
+        .title-container img {
+            transform: rotate(180deg);
+            margin-right: 14px;
+        }
+        .title {
+            font-size: var(--lg);
+            font-weight: bold;
+        }
+        .order {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 16px;
+            align-items: center;
+            background-color: var(--text-input-field);
+            margin-bottom: 24px;
+            border-radius: 8px;
+            padding: 0 24px;
+            color: var(--medium-gray);
+        }
+        .order p:nth-child(1) {
+            display: flex;
+            flex-direction: column;
+        }
+        .order p span:nth-child(1) {
+            font-size: var(--md);
+            font-weight: bold;
+        }
+        .order p:nth-child(2) {
+            text-align: end;
+            font-weight: bold;
+        }
+        .shopping-cart {
+            display: grid;
+            grid-template-columns: auto 1fr auto auto;
+            gap: 16px;
+            margin-bottom: 24px;
+            align-items: center;
+        }
+        .shopping-cart figure {
+            margin: 0;
+        }
+        .shopping-cart figure img {
+            width: 70px;
+            height: 70px;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+        .shopping-cart p:nth-child(2) {
+            color: var(--light-gray);
+        }
+        .shopping-cart p:nth-child(3) {
+            font-size: var(--md);
+            font-weight: bold;
+            color: var(--medium-gray);
+        }
+        .primary-button {
+            background-color: var(--turquoise);
+            border-radius: 8px;
+            border: none;
+            color: var(--white);
+            width: 100%;
+            cursor: pointer;
+            font-size: var(--md);
+            font-weight: bold;
+            height: 50px;
+        }
+        @media (max-width: 640px) {
+            .product-detail {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <aside class="product-detail">
+        <div class="title-container">
+            <img src="./icons/flechita.svg" alt="arrow">
+            <p class="title">My order</p>
+        </div>
+        <div class="my-order-content">
+            <div class="shopping-cart">
+                <figure>
+                    <img src="https://images.pexels.com/photos/4087995/pexels-photo-4087995.jpeg" alt="drums">
+                </figure>
+                <p>Drums</p>
+                <p>$800,00</p>
+                <img src="./icons/icon_close.png" alt="close">
+            </div>
+            <div class="shopping-cart">
+                <figure>
+                    <img src="https://images.pexels.com/photos/164967/pexels-photo-164967.jpeg" alt="cymbal">
+                </figure>
+                <p>Cymbal</p>
+                <p>$120,00</p>
+                <img src="./icons/icon_close.png" alt="close">
+            </div>
+            <div class="shopping-cart">
+                <figure>
+                    <img src="https://images.pexels.com/photos/164829/pexels-photo-164829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="microphone">
+                </figure>
+                <p>Microphone</p>
+                <p>$120,00</p>
+                <img src="./icons/icon_close.png" alt="close">
+            </div>
+            <div class="order">
+                <p>
+                    <span>Total</span>
+                </p>
+                <p>$1040.00</p>
+            </div>
+            <button class="primary-button">
+                Checkout
+            </button>
+        </div>
+    </aside>
+</body>
+</html>
