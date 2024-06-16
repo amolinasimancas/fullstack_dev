@@ -1,0 +1,13 @@
+/* element */
+p {
+    color: green;
+    font-size: 20px;
+}
+/* class */
+.titulo {
+    color: red;
+}
+/* id */
+#titulo2 {
+    color: purple;
+}
