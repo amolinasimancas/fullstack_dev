@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.titulo {
+  display: block;
+  position: absolute;
+  height: 5vh;
+  top: 20vh;
+  width: 30vw;
+  left: 35vw;
+  background-color: green;
+  border-radius: 1rem;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  padding: 1rem;
+  z-index: 1;
+}
+.mensaje {
+  display: block;
+  position: absolute;
+  top: 22vh;
+  width: 80vw;
+  left: 10vw;
+  background-color: gray;
+  color: white;
+  text-align:left;
+  border-radius: 1rem;
+  padding: 4rem 2rem 2rem 2rem;
+}
+p {
+  padding: 0.3rem;
+}
