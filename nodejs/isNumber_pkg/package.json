@@ -1,0 +1,15 @@
+{
+  "name": "isnumber_pkg",
+  "version": "1.0.0",
+  "description": "Ejemplo de importación y uso de paquete desde npm",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js"
+  },
+  "author": "Antonio Molina",
+  "license": "MIT",
+  "dependencies": {
+    "isnumber": "^1.0.0"
+  }
+}
