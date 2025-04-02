@@ -59,7 +59,7 @@ async function transcriptAudio(audioFilePath, apiKey) {
 }
 
 const audioPath = './testOpenAI.mp3';
-const openAIApiKey = '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';
+const openAIApiKey = 'aqui va la apiKey';
 
 transcriptAudio(audioPath, openAIApiKey)
   .then((transcription) => {
