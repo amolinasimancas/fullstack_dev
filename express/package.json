@@ -3,13 +3,17 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch app.js",
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "Antonio Molina",
   "license": "MIT",
   "description": "Curso ExpressJS de Platzi",
   "dependencies": {
+    "body-parser": "^2.2.0",
+    "dotenv": "^16.4.7",
     "express": "^5.1.0"
   }
 }

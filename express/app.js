@@ -1,6 +1,13 @@
 const express = require('express');
 const app = express();
-const PORT = 4000;
+const bodyParser = require('body-parser');
+
+require('dotenv').config();
+const PORT = process.env.PORT || 3000;
+console.log(PORT);
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended:true}));
 
 app.get('/', (req, res) => {
     res.send(`
@@ -10,6 +17,22 @@ app.get('/', (req, res) => {
     `);
 });
 
+app.get('/users/:id', (req, res) => {
+    const userId = req.params.id;
+    res.send(`Mostrar info con ID: ${userId}`);
+});
+
+app.get('/search', (req, res) => {
+    const terms = req.query.termino || 'No especificado';
+    const category = req.query.categoria || 'Todas';
+
+    res.send(`
+        <h2>Resultado de Búsqueda:</h2>
+        <p>Término: ${terms}</p>
+        <p>Categoría: ${category}</p>
+        `)
+});
+
 app.listen(PORT, () => {
-    console.log(`Example app listening on port ${PORT}`);
+    console.log(`Example app listening on port http://localhost:${PORT}`);
 });
