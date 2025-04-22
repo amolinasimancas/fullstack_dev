@@ -18,5 +18,20 @@
     "id": 4,
     "name": "Liliana Contreras",
     "email": "liliana@example.com"
+  },
+  {
+    "id": 5,
+    "name": "José Seringo",
+    "email": "jose@example.com"
+  },
+  {
+    "id": 6,
+    "name": "Jonas Rodriguez",
+    "email": "jonas@example.com"
+  },
+  {
+    "id": 7,
+    "name": "Maria Petaca",
+    "email": "petaca@example.com"
   }
 ]
