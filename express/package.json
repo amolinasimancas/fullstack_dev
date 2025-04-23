@@ -12,8 +12,13 @@
   "license": "MIT",
   "description": "Curso ExpressJS de Platzi",
   "dependencies": {
+    "@prisma/client": "^6.6.0",
     "body-parser": "^2.2.0",
     "dotenv": "^16.4.7",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "pg": "^8.15.1"
+  },
+  "devDependencies": {
+    "prisma": "^6.6.0"
   }
 }
